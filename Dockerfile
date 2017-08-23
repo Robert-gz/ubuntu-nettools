@@ -13,3 +13,5 @@ RUN mkdir -p /var/run/apache2
 RUN chown www-data:www-data /var/run/apache2
 EXPOSE 80
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+
+RUN  apt-get update && apt-get install traceroute && apt clean
