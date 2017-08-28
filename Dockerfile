@@ -15,3 +15,4 @@ EXPOSE 80
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
 RUN  apt-get update && apt-get install traceroute && apt clean
+RUN  apt-get update && apt-get install iptables && apt clean
