@@ -17,3 +17,4 @@ CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 RUN  apt-get update && apt-get install -y traceroute && apt clean
 RUN  apt-get update && apt-get install -y iptables && apt clean
 RUN  apt-get update && apt-get install -y arping && apt clean
+RUN  apt-get update && apt-get install -y ipcalc && apt clean
