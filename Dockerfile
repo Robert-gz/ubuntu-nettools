@@ -1,6 +1,9 @@
 FROM ubuntu:16.04
 MAINTAINER robert-xie@foxmail.com
 RUN apt-get update && apt-get install -y \
+  libc6 \
+  libcap0.8 \
+  apparmor \
   libssl1.0.0 \
   libssl-dev \
   net-tools \
