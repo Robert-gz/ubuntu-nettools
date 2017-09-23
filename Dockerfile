@@ -14,5 +14,7 @@ RUN apt-get update && apt-get install -y \
   inetutils-ping \
   curl dnsutils wget  vim ethtool tcpdump \
 && apt clean
-
+mv /usr/sbin/tcpdump /usr/bin/tcpdump
+# when tcpdump in sbin, a error will happen when run tcpdump: error while loading shared libraries: libcrypto.so.1.0.0: cannot stat shared object: Permission denied
+# 
 CMD ["bash"]
